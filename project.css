@@ -1,0 +1,67 @@
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.container{
+
+  background-color: gray;
+  height:700px;
+}
+.header{
+  border-color: black;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+}
+h1{
+align-items: center;
+font-size: 50px;
+margin-left: 500px;
+margin-top: 20px;
+padding: 20px;
+text-decoration: underline;
+
+}
+h2{
+  font-size: 15px;
+  font-family: georgia, arial;
+  padding: 10px;
+  text-align: center;
+}
+.info{
+  align-items: center;
+  font-size: 15px;
+  background-color: cyan;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-here[type=text] {
+  float: center;
+  width: 200px;
+  padding: 20px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 550px;
+  margin-right: 16px;
+  font-size: 17px;
+  display: flex;
+  display: block;
+}
+#btn-search{
+  margin-left: 600px;
+  margin-top: 30px;
+  background-color: blue;
+  color: white;
+  padding:10px;
+
+  font-size: 20px;
+  border-style: none;
+  border-radius: 100px;
+  transition: 0.4s all;
+}
+#btn-search:hover{
+  cursor: pointer;
+  background-color: orange;
+  box-shadow: 0px 0px 10px 1px cyan;
+
+}
