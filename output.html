@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Google Javascript API Libaray - This is used to allow access to the Youtube API via an API Key -->
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script>
+            gapi.load("client")
+        </script>
+        <title>ShazTXT | Music on your Mind</title>
+    </head>
+    <body>
+        <button
+            id="back-btn"
+            class="
+                button
+                is-overlay
+                m-5
+                is-fixed-top is-pulled-left is-primary is-light
+            "
+        >
+            Back
+        </button>
+        <div class="hero is-fullheight">
+            <div class="hero-body">
+                <main class="tile is-ancestor">
+                    <!-- Javscript DOM Injection point -->
+                    <section
+                        id="output"
+                        class="tile is-vertical is-5 mx-auto is-parent"
+                    ></section>
+                </main>
+            </div>
+        </div>
+        <!-- The below is hidden by default -->
+        <div class="modal" id="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-text-centered">
+                <p id="message"></p>
+            </div>
+            <button
+                class="modal-close is-large"
+                id="close-btn"
+                aria-label="close"
+            ></button>
+        </div>
+    </body>
+    <script src="./assets/js/output.js"></script>
+</html>

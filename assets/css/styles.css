@@ -1,0 +1,62 @@
+/* Some CSS Custom Properties AKA CSS Varibles for reducing the repetition */
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #ffb3ba,
+        #ffdfba,
+        #ffffba,
+        #baffc9,
+        #bae1ff
+    );
+    --mainCol: #642329;
+}
+
+/* This is a small reset to the HTML and Body so that the background gradiant expands to whole Viewpoint */
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background gradient and attempts to set a text color.
+   This I beleive the text color is over written but Bulma CSS so may have little affect  */
+body {
+    background: var(--gradient);
+    color: var(--mainCol);
+}
+
+.product {
+    font-family: "Zen Tokyo Zoo", cursive;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    background-color: #d8d6d6;
+    height: 0px; /*This is set to 0 to allow for an animation on call. */
+    border-radius: 25px;
+    border-top: 20px solid #bae1ff;
+    border-bottom: 20px solid #ffb3ba;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 20px 100%;
+    background: var(--gradient);
+    transition: height 0.25s ease;
+}
+
+.modal-content p {
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+#close-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+#mymodal {
+    display: none;
+}
